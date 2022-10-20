@@ -1,0 +1,35 @@
+.cursor {
+  cursor: pointer !important;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.br--desktop {
+  @include less-than(tablet) {
+    display: none;
+  }
+}
+.br--mobile {
+  display: none;
+  @include less-than(tablet) {
+    display: block;
+  }
+}
+
+.page-transition-enter-active,
+.page-transition-leave-active {
+  transition: opacity 0.1s;
+}
+.page-transition-enter,
+.page-transition-leave-to {
+  opacity: 0;
+}
+
+
+.title-semi{
+  font-family: 'Nunito-Medium';
+}
+.title-bold{
+  font-family: 'Nunito-Bold';
+}
